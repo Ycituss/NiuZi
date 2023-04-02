@@ -1,0 +1,7 @@
+firstEnable: true
+pkCd: 3600
+databaseAddress: localhost
+databasePort: 3306
+databaseName: laoshu
+databaseUser: laoshu
+databasePassword: password

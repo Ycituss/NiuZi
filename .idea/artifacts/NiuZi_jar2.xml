@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="NiuZi:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/NiuZi_jar2</output-path>
+    <root id="archive" name="NiuZi_jar2.jar">
+      <element id="archive" name="NiuZi.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
