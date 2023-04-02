@@ -41,12 +41,12 @@ object PluginMain : KotlinPlugin(
         TDataManager.init()
         CommandHandler.init()
         AutoRefresher
-        logger.info("达达没牛子")
+        logger.info("达达没阿丑")
     }
 
     override fun onDisable() {
         TDataManager.disable()
-        logger.info("达达牛子被吃了")
+        logger.info("达达阿丑被吃了")
     }
 
 }

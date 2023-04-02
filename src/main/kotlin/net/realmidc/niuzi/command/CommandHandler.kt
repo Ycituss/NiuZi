@@ -14,9 +14,9 @@ object CommandHandler {
 
     fun init() {
         registerCommands("变女性", ChangeToWomanCommand())
-        registerCommands("领养牛子", GetCommand())
-        registerCommands("我的牛子", StatusCommand())
-        registerCommands("改牛子名", NameCommand())
+        registerCommands("领养阿丑", GetCommand())
+        registerCommands("我的阿丑", StatusCommand())
+        registerCommands("改阿丑名", NameCommand())
         registerCommands("比划比划", PKCommand())
         registerCommands("管理命令", AdminCommand())
         registerCommands("我的对象", LoverCommand())
@@ -24,18 +24,18 @@ object CommandHandler {
         registerCommands("贴贴！", DoiCommand())
         registerCommands("处理请求", RequestCommand())
         registerCommands("我要分手", LeaveCommand())
-        registerCommands("群牛子排行", TopCommand())
-        registerCommands("牛子榜", TopCommand())
+        registerCommands("群阿丑排行", TopCommand())
+        registerCommands("阿丑榜", TopCommand())
         registerCommands("清除贴贴cd", RemoveDoiCd())
         registerCommands("清除比划cd", RemovePKCd())
-        registerCommands("查看牛子", AdminStatusCommand())
+        registerCommands("查看阿丑", AdminStatusCommand())
 
         PluginMain.globalEventChannel().subscribeGroupMessages {
             startsWith("", removePrefix = true) {
                 val command = it.split(" ")
                 val root = command[0]
                 val args = command.drop(1)
-                if (root == "牛子系统") {
+                if (root == "阿丑系统") {
                     val builder = StringBuilder()
                     builder.append(Locale.getLang("CommandHeader") + "\n")
                     commands.forEach { (name, executor) ->

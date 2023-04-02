@@ -9,7 +9,7 @@ import net.realmidc.niuzi.util.Locale.sendLang
 
 class GetCommand : SubCommand {
 
-    override fun describe(): String = "领养一只牛子"
+    override fun describe(): String = "领养一只阿丑"
 
     override fun usage(): String? = null
 

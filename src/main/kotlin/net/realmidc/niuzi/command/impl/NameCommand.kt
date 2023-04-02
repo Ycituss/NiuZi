@@ -10,7 +10,7 @@ import net.realmidc.niuzi.util.hasNiuZi
 
 class NameCommand : SubCommand {
 
-    override fun describe(): String = "改你的牛子的名字，支持空格，最长10个字"
+    override fun describe(): String = "改你的阿丑的名字，支持空格，最长10个字"
 
     override fun usage(): String = "[要改的名字]"
 

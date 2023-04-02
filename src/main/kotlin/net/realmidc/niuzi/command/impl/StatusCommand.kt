@@ -10,7 +10,7 @@ import net.realmidc.niuzi.util.Locale.sendLang
 
 class StatusCommand : SubCommand {
 
-    override fun describe(): String = "查看你的牛子"
+    override fun describe(): String = "查看你的阿丑"
 
     override fun usage(): String? = null
 

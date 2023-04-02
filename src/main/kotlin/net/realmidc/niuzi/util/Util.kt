@@ -66,7 +66,7 @@ fun pk(source: NiuZi, target: NiuZi, delta: Double, win: Boolean) {
 }
 
 /**
- * 比划比划的结果（牛子都断掉）
+ * 比划比划的结果（阿丑都断掉）
  * @param source
  * @param target
  * @param delta

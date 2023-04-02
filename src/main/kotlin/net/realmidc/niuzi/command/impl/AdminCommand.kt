@@ -27,12 +27,12 @@ class AdminCommand : SubCommand {
                 val cmd0 = args[0]
                 val temp0 = args.drop(1)
                 when (cmd0) {
-                    "牛子系统" -> {
+                    "阿丑系统" -> {
                         if (temp0.isNotEmpty()) {
                             val cmd1 = temp0[0]
                             val temp1 = temp0.drop(1)
                             when (cmd1) {
-                                "查看牛子" -> {
+                                "查看阿丑" -> {
                                     if (temp1.isEmpty()) {
                                         group.sendLang("Admin.View.NoArgs")
                                         return

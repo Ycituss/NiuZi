@@ -47,7 +47,7 @@ object Dao {
         val temp = Random().nextInt(2)
         HikariCP.execute(
             PluginMain,
-            "INSERT INTO niuzi_data (qq,name,length,sex,level,points) VALUE($qq,'牛子',$length,$temp,0,0);",
+            "INSERT INTO niuzi_data (qq,name,length,sex,level,points) VALUE($qq,'阿丑',$length,$temp,0,0);",
             null
         )
     }

@@ -11,7 +11,7 @@ import net.realmidc.niuzi.util.getAt
 
 class AdminStatusCommand : SubCommand {
 
-    override fun describe(): String = "查看别人的牛子"
+    override fun describe(): String = "查看别人的阿丑"
 
     override fun usage(): String? = null
 
@@ -29,13 +29,7 @@ class AdminStatusCommand : SubCommand {
                 group.sendLang("Status.NoNiuZi")
                 return
             }
-            if (member.pointsState() == -1) {
-                group.sendLang("Status.Status-1", "", targetQQ, niuzi.name, niuzi.sex.toChinese(), niuzi.length)
-            } else if (member.pointsState() == 3) {
-                group.sendLang("Status.Status3", "", targetQQ, niuzi.name, niuzi.sex.toChinese(), niuzi.length)
-            } else {
-                group.sendLang("Status.Status", "", targetQQ, niuzi.name, niuzi.sex.toChinese(), niuzi.length)
-            }
+            group.sendLang("Status.Status", "", targetQQ, niuzi.name, niuzi.sex.toChinese(), niuzi.length)
         }
     }
 }

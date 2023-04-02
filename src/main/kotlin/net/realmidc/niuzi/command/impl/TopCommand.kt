@@ -22,7 +22,7 @@ class TopCommand : SubCommand {
 
     override fun needPerm(): Boolean = false
 
-    override fun describe(): String = "查看牛子排行榜"
+    override fun describe(): String = "查看阿丑排行榜"
 
     override suspend fun execute(sender: Member, group: Group, args: List<String>) {
         val time = System.currentTimeMillis()
@@ -45,7 +45,7 @@ class TopCommand : SubCommand {
                     senderId = group.bot.id,
                     time = ((time / 1000) + 1).toInt(),
                     senderName = group.bot.nameCardOrNick,
-                    message = PlainText("太可惜了，本群还没有人领养过牛子")
+                    message = PlainText("太可惜了，本群还没有人领养过阿丑")
                 )
             )
         }
