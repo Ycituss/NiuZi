@@ -13,7 +13,7 @@ class AdminStatusCommand : SubCommand {
 
     override fun describe(): String = "查看别人的阿丑"
 
-    override fun usage(): String? = null
+    override fun usage(): String? = "[@对方]"
 
     override fun needPerm(): Boolean = false
 

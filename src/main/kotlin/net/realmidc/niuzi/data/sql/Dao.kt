@@ -126,6 +126,14 @@ object Dao {
         )
     }
 
+    fun setPoints(qq: Long, points: Int) {
+        HikariCP.execute(
+            PluginMain,
+            "UPDATE `niuzi_data` SET `points` = $points WHERE `qq` = $qq",
+            null
+        )
+    }
+
     fun getPoints(qq: Long): Int {
         return HikariCP.query(
             PluginMain,

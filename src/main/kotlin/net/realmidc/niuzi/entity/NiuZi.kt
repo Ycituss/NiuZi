@@ -33,5 +33,6 @@ class NiuZi(val owner: Long, var name: String, var length: Double, var sex: Sex,
         this.length = length
         Dao.setLength(owner, this.length)
     }
+
     
 }

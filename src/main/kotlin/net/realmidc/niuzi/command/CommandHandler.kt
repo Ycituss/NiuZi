@@ -29,6 +29,7 @@ object CommandHandler {
         registerCommands("清除贴贴cd", RemoveDoiCd())
         registerCommands("清除比划cd", RemovePKCd())
         registerCommands("查看阿丑", AdminStatusCommand())
+        registerCommands("更改状态", ChangePointsCommand())
 
         PluginMain.globalEventChannel().subscribeGroupMessages {
             startsWith("", removePrefix = true) {
