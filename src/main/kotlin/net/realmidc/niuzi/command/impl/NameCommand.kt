@@ -27,6 +27,11 @@ class NameCommand : SubCommand {
                 return
             }
             val name = args[0]
+            if (name.contains("形随") || name.contains("行随")) {
+                Dao.setPoints(sender.id, -1)
+                group.sendLang("Name.Ban")
+                return
+            }
             if (name.length > 10) {
                 group.sendLang("NameTooLong")
                 return

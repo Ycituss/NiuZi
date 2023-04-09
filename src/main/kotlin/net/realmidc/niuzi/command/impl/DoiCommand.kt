@@ -30,7 +30,7 @@ class DoiCommand : SubCommand {
             return
         }
         val target = sender.getLover()
-        var length = randomDouble(121)
+        var length = 40 + randomDouble(81)
 //        if (sender.id == 2813817156L) length = 110 + randomDouble(11)
         val now = System.currentTimeMillis()
         if (TempStorage.doidata.containsKey(sender.id) || TempStorage.doidata.containsKey(target.owner)) {
