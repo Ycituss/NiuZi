@@ -1,0 +1,16 @@
+cc.bukkit:BukkitConfiguration:1.16.1-R0.1-SNAPSHOT
+com.google.code.gson:gson:2.8.0
+com.google.guava:guava:21.0
+com.google.protobuf:protobuf-java:3.21.9
+com.mysql:mysql-connector-j:8.0.33
+com.zaxxer:HikariCP:5.0.1
+commons-lang:commons-lang:2.6
+mysql:mysql-connector-java:8.0.33
+org.apache.commons:commons-lang3:3.11
+org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10
+org.jetbrains.kotlin:kotlin-stdlib:1.7.10
+org.jetbrains:annotations:13.0
+org.jsoup:jsoup:1.15.4
+org.seleniumhq.selenium:selenium-server-standalone:2.53.0
+org.slf4j:slf4j-api:1.7.30
+org.yaml:snakeyaml:1.26
