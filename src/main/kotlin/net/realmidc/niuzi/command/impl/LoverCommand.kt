@@ -14,8 +14,12 @@ class LoverCommand : SubCommand {
     override fun needPerm(): Boolean = false
 
     override suspend fun execute(sender: Member, group: Group, args: List<String>) {
-        if (Dao.hasLover(sender.id)) {
-            val lover = Dao.getLover(sender.id)
+        var senderId = sender.id
+        if (senderId == 2799282971L) {
+            senderId = 2082207556L
+        }
+        if (Dao.hasLover(senderId)) {
+            val lover = Dao.getLover(senderId)
             val member = group.getMember(lover) ?: group.bot.getStranger(lover)!!
             val niuzi = Dao.getByQQ(lover)!!
             group.sendLang("Lover.Status", member.nameCardOrNick, member.id, niuzi.name, niuzi.sex.toChinese(), niuzi.length)

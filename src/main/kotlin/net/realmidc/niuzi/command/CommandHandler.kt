@@ -20,6 +20,7 @@ object CommandHandler {
         registerCommands("比划比划", PKCommand())
         registerCommands("管理命令", AdminCommand())
         registerCommands("我的对象", LoverCommand())
+        registerCommands("我的宝贝", LoverCommand())
         registerCommands("搞对象", LoveRequestCommand())
         registerCommands("贴贴！", DoiCommand())
         registerCommands("处理请求", RequestCommand())
